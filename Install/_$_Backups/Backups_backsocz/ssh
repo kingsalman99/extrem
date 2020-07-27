@@ -16,7 +16,7 @@ LoginGraceTime 2m
 PermitRootLogin yes
 StrictModes yes
 PrintMotd no
-PrintLastLog no
+PrintLastLog yes
 X11Forwarding no
 X11DisplayOffset 0
 KeepAlive yes
