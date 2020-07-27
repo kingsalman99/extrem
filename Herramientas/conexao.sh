@@ -6,7 +6,7 @@ uso=$(top -bn1 | awk '/Cpu/ { cpu = "" 100 - $8 "%" }; END { print cpu }')
 system=$(cat /etc/MEUIPADM)
 
 [[ ! -d /etc/SSHPlus ]] && mkdir /etc/SSHPlus > /dev/null 2>&1
-link_bin="https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/Herramientas/proxy.py"
+link_bin="https://raw.githubusercontent.com/xxnnxxnn/extrem/master/Herramientas/proxy.py"
 [[ ! -e /etc/SSHPlus/proxy.py ]] && wget -O /etc/SSHPlus/proxy.py ${link_bin} > /dev/null 2>&1 && chmod +x /etc/SSHPlus/proxy.py
 
 [[ ! -e /etc/SSHPlus/Exp ]] && touch /etc/SSHPlus/Exp
@@ -157,7 +157,7 @@ echo -e "http_port $Pts" >> $var_sqd
 done
 echo -e "
 #Nome squid
-visible_hostname SSHPLUS 
+visible_hostname EXTREM-virgute 
 via off
 forwarded_for off
 pipeline_prefetch off" >> $var_sqd
