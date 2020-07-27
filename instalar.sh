@@ -49,7 +49,7 @@ inst_components () {
 }
 funcao_idioma () {
 msg -bar2
-declare -A idioma=( [1]="en English" [2]="fr Franch" [3]="de German" [4]="it Italian" [5]="pl Polish" [6]="pt Portuguese" [7]="es Spanish" [8]="tr Turkish" )
+declare -A idioma=( [1]="en English" [2]="fr Franch" [3]="lt Lithuanian" [4]="it Italian" [5]="pl Polish" [6]="pt Portuguese" [7]="es Spanish" [8]="tr Turkish" )
 for ((i=1; i<=12; i++)); do
 valor1="$(echo ${idioma[$i]}|cut -d' ' -f2)"
 [[ -z $valor1 ]] && break
@@ -187,6 +187,7 @@ if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") 
    mv -f /etc/bash.bashrc.2 /etc/bash.bashrc
    echo "${SCPdir}/menu" > /usr/bin/menu && chmod +x /usr/bin/menu
    echo "${SCPdir}/menu" > /usr/bin/tuzas && chmod +x /usr/bin/tuzas
+   echo "${SCPdir}/menu" > /usr/bin/virgute && chmod +x /usr/bin/virgute
    echo "/etc/newadm/menu" > /bin/h && chmod +x /bin/h > /dev/null 2>&1
    wget -O /root/versao https://raw.githubusercontent.com/xxnnxxnn/extrem/master/versao &> /dev/null
    inst_components
